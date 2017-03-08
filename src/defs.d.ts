@@ -1,5 +1,9 @@
 
+interface MyDialog {
+    setContent(text: string): void;
+}
+
 interface JQuery {
-    myDialog(): void;
-    prefixText(prefix: string): void;
+    myDialog(): MyDialog;
+    prependText(prefix: string): void;
 }
